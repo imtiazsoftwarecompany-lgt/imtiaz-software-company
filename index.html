@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Imtiaz Software Company | Digital Solutions</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #071426;
+    color: white;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(7,20,38,0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #183b5c;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #35d6ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #35d6ff;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+    radial-gradient(circle at 20% 20%, #123e70 0, transparent 35%),
+    radial-gradient(circle at 80% 70%, #35216b 0, transparent 35%),
+    linear-gradient(135deg, #071426, #102b4b, #10172e);
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 65px);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #35d6ff;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #c4d4e5;
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #00b8db, #4169e1);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 25px #087da7;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px #35d6ff;
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #35d6ff;
+}
+
+.section-desc {
+    color: #b8c9db;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+/* SERVICES */
+.services {
+    background: #0a1b30;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: linear-gradient(145deg, #142e4a, #0c1e34);
+    padding: 35px 20px;
+    border: 1px solid #21496b;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: #35d6ff;
+    box-shadow: 0 10px 30px #001b32;
+}
+
+.service-card .emoji {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #35d6ff;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #c2d0df;
+    line-height: 1.6;
+}
+
+/* ABOUT */
+.about {
+    background:
+    radial-gradient(circle at center, #18375b, #071426 70%);
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #c4d4e5;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* CONTACT */
+.contact {
+    background: #0b2038;
+}
+
+.contact p {
+    color: #d3e1ed;
+    margin: 12px;
+}
+
+/* FOOTER */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #040d19;
+    color: #9bb2c8;
+}
+
+/* WHATSAPP FLOATING BUTTON */
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    background: #18bd63;
+    color: white;
+    padding: 16px 22px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px #0008;
+    z-index: 200;
+}
+
+/* MOBILE */
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">IMTIAZ SOFTWARE</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+
+    <h1>Welcome to <span>Imtiaz Software</span></h1>
+
+    <p>
+        We create modern websites, powerful business software,
+        mobile applications and digital solutions to grow your business.
+    </p>
+
+    <a href="#services" class="btn">Explore Our Services</a>
+
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <p class="section-desc">
+        Smart technology solutions for your business.
+    </p>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <div class="emoji">🌐</div>
+            <h3>Website Development</h3>
+            <p>Professional and responsive websites for your business.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="emoji">💻</div>
+            <h3>Business Software</h3>
+            <p>Billing, inventory, accounts and custom management systems.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="emoji">📱</div>
+            <h3>Mobile Applications</h3>
+            <p>Modern Android and mobile app development solutions.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="emoji">🛒</div>
+            <h3>Online Stores</h3>
+            <p>Professional online shopping and e-commerce websites.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="emoji">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>Creative logos, banners and business branding.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="emoji">📈</div>
+            <h3>Digital Marketing</h3>
+            <p>Google advertising and online business promotion.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <h2 class="section-title">About Our Company</h2>
+
+    <p>
+        Imtiaz Software Company is based in Karachi, Pakistan.
+        We provide modern digital solutions to help businesses
+        grow, improve productivity and reach more customers.
+        Our goal is to make technology simple and useful for everyone.
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Let's Work Together</h2>
+
+    <p>Have a project or business idea? Contact us today.</p>
+
+    <p><strong>Location:</strong> Karachi, Pakistan</p>
+
+    <p><strong>WhatsApp:</strong> 03429141098</p>
+
+    <a class="btn"
+       href="https://wa.me/923429141098"
+       target="_blank">
+       Contact Us on WhatsApp
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Imtiaz Software Company. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/923429141098"
+   target="_blank">
+   WhatsApp
+</a>
+
+</body>
+</html>
